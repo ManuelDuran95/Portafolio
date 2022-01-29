@@ -16,7 +16,7 @@ Si desea ver el demo de este respositorio deployed, puede ir al siguiente enlace
 
 
 ## Preview
-Insert here an image of the preview if your project has one. The image can be into the project, you have to indicate the route and look like this.
+
 
 ![](/src/assets/img/preview.jpg)
 
