@@ -22,6 +22,7 @@ import { ProfilepageComponent } from "./examples/profilepage/profilepage.compone
 import { RegisterpageComponent } from "./examples/registerpage/registerpage.component";
 import { LandingpageComponent } from "./examples/landingpage/landingpage.component";
 import { TuringComponent } from './turing/turing.component';
+import { CertificadosComponent } from './certificados/certificados.component';
 
 @NgModule({
   imports: [
@@ -47,7 +48,8 @@ import { TuringComponent } from './turing/turing.component';
     ProfilepageComponent,
     RegisterpageComponent,
     LandingpageComponent,
-    TuringComponent
+    TuringComponent,
+    CertificadosComponent
   ],
   exports: [
     IndexComponent,
