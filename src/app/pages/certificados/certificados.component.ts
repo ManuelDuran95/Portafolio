@@ -1,12 +1,15 @@
 import {  Component, OnInit, OnDestroy  } from '@angular/core';
 import Chart from "chart.js";
 
+
 @Component({
   selector: 'app-certificados',
   templateUrl: './certificados.component.html',
   styleUrls: ['./certificados.component.scss']
 })
 export class CertificadosComponent implements OnInit, OnDestroy {
+  
+
   isCollapsed = true;
   constructor() {}
 

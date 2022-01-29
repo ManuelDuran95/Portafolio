@@ -23,9 +23,11 @@ import { RegisterpageComponent } from "./examples/registerpage/registerpage.comp
 import { LandingpageComponent } from "./examples/landingpage/landingpage.component";
 import { TuringComponent } from './turing/turing.component';
 import { CertificadosComponent } from './certificados/certificados.component';
+//import { LightgalleryModule } from 'lightgallery/angular';
 
 @NgModule({
   imports: [
+    //LightgalleryModule,
     CommonModule,
     BrowserModule,
     FormsModule,
