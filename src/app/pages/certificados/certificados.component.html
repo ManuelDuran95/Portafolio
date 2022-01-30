@@ -114,14 +114,7 @@
   <div class="container">
       <div class="row">
           <h1>Certificados Obtenidos</h1>
-        <lightgallery [settings]="settings" [onBeforeSlide]="onBeforeSlide">
-            <a href="img/img1.jpg">
-                <img alt=".." src="img/thumb1.jpg" />
-            </a>
-            <a href="img/img1.jpg">
-                <img alt=".." src="img/thumb1.jpg" />
-            </a>
-        </lightgallery>
+          <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
       </div>
   </div>
   

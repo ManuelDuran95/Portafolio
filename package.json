@@ -2,7 +2,9 @@
   "name": "blk-design-system-angular",
   "version": "1.2.0",
   "scripts": {
+    
     "ng": "ng",
+    "postinstall": "ngcc",
     "start": "ng serve",
     "build": "ng build",
     "description": "BLK Design System Angular: Free Angular Design System For Bootstrap 4 and Angular",
@@ -75,9 +77,10 @@
     "angular-lightgallery": "^1.0.8",
     "chart.js": "2.9.4",
     "core-js": "3.8.2",
+    "hammerjs": "^2.0.8",
     "jw-bootstrap-switch-ng2": "2.0.5",
-    
     "ngx-bootstrap": "6.2.0",
+    "ngx-gallery": "^5.10.0",
     "nouislider": "14.6.3",
     "rxjs": "6.6.3",
     "tslib": "2.0.3",

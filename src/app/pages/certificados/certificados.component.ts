@@ -1,5 +1,6 @@
 import {  Component, OnInit, OnDestroy  } from '@angular/core';
 import Chart from "chart.js";
+import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gallery';
 
 
 @Component({
@@ -8,12 +9,54 @@ import Chart from "chart.js";
   styleUrls: ['./certificados.component.scss']
 })
 export class CertificadosComponent implements OnInit, OnDestroy {
-  
+  galleryOptions: NgxGalleryOptions[];
+  galleryImages: NgxGalleryImage[];
 
   isCollapsed = true;
   constructor() {}
 
   ngOnInit() {
+    this.galleryOptions = [
+      {
+          width: '600px',
+          height: '400px',
+          thumbnailsColumns: 4,
+          imageAnimation: NgxGalleryAnimation.Slide
+      },
+      // max-width 800
+      {
+          breakpoint: 800,
+          width: '100%',
+          height: '600px',
+          imagePercent: 80,
+          thumbnailsPercent: 20,
+          thumbnailsMargin: 20,
+          thumbnailMargin: 20
+      },
+      // max-width 400
+      {
+          breakpoint: 400,
+          preview: false
+      }
+  ];
+
+  this.galleryImages = [
+      {
+          small: 'assets/img/1-small.jpg',
+          medium: 'assets/img/1-medium.jpg',
+          big: 'assets/img/1-big.jpg'
+      },
+      {
+          small: 'assets/img/2-small.jpg',
+          medium: 'assets/img/2-medium.jpg',
+          big: 'assets/img/2-big.jpg'
+      },
+      {
+          small: 'assets/img/3-small.jpg',
+          medium: 'assets/img/3-medium.jpg',
+          big: 'assets/img/3-big.jpg'
+      }
+  ];
     var body = document.getElementsByTagName("body")[0];
     body.classList.add("landing-page");
 

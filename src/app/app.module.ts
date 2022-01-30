@@ -24,6 +24,7 @@ import { ProfilepageComponent } from "./pages/examples/profilepage/profilepage.c
 import { RegisterpageComponent } from "./pages/examples/registerpage/registerpage.component";
 import { LandingpageComponent } from "./pages/examples/landingpage/landingpage.component";
 //import { LightgalleryModule } from 'lightgallery/angular';
+import { NgxGalleryModule } from 'ngx-gallery';
 @NgModule({
   declarations: [
     AppComponent
@@ -35,6 +36,7 @@ import { LandingpageComponent } from "./pages/examples/landingpage/landingpage.c
   imports: [
    // LightgalleryModule,
     BrowserAnimationsModule,
+    NgxGalleryModule,
     FormsModule,
     HttpClientModule,
     RouterModule,
